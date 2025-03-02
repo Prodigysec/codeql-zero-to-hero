@@ -1,0 +1,11 @@
+---
+sourceLocationPrefix: C:\Users\admin\codeql-home\codeql-db\codeql-zero-to-hero
+baselineLinesOfCode: 120
+unicodeNewlines: false
+columnKind: utf32
+primaryLanguage: python
+creationMetadata:
+  sha: 89bef65d573a6f28f2ca29d165fd91208492244c
+  cliVersion: 2.20.5
+  creationTime: 2025-03-01T21:05:15.526444100Z
+finalised: true
