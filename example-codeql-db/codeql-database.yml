@@ -1,0 +1,11 @@
+---
+sourceLocationPrefix: D:\CyberSec\CodeQL\codeql-zero-to-hero
+baselineLinesOfCode: 54
+unicodeNewlines: false
+columnKind: utf32
+primaryLanguage: python
+creationMetadata:
+  sha: a77bce7903ba0ea20378ea0215419aa80550814b
+  cliVersion: 2.15.4
+  creationTime: 2023-12-19T18:50:02.837236400Z
+finalised: true
