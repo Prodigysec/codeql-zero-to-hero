@@ -27,7 +27,9 @@ class GradioButton extends RemoteFlowSource::Range {
 private module MyConfig implements DataFlow::ConfigSig {
     predicate isSource(DataFlow::Node source) { source instanceof GradioButton }
 
-    predicate isSink(DataFlow::Node sink) { exists(Decoding d | sink = d) }
+    predicate isSink(DataFlow::Node sink) { 
+    exists(Decoding d | d.mayExecuteInput() | sink = d.getAnInput())
+ }
 }
 module MyFlow = TaintTracking::Global<MyConfig>;
 

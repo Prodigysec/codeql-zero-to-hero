@@ -4,6 +4,8 @@
  * @kind problem
  */
 
+//  Query for calls to functions from specific libraries
+
 import python
 import semmle.python.ApiGraphs
 

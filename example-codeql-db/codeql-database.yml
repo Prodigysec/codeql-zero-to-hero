@@ -1,11 +1,22 @@
 ---
+<<<<<<< HEAD
 sourceLocationPrefix: D:\CyberSec\CodeQL\codeql-zero-to-hero
 baselineLinesOfCode: 54
+=======
+sourceLocationPrefix: C:\Users\admin\codeql-home\codeql-db\codeql-zero-to-hero
+baselineLinesOfCode: 120
+>>>>>>> 11192936cf2adfc8cfa5b72745e03fce86f24d6b
 unicodeNewlines: false
 columnKind: utf32
 primaryLanguage: python
 creationMetadata:
+<<<<<<< HEAD
   sha: a77bce7903ba0ea20378ea0215419aa80550814b
   cliVersion: 2.15.4
   creationTime: 2023-12-19T18:50:02.837236400Z
+=======
+  sha: 89bef65d573a6f28f2ca29d165fd91208492244c
+  cliVersion: 2.20.5
+  creationTime: 2025-03-01T21:05:15.526444100Z
+>>>>>>> 11192936cf2adfc8cfa5b72745e03fce86f24d6b
 finalised: true

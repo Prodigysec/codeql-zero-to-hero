@@ -15,7 +15,6 @@ class GradioInterface extends RemoteFlowSource::Range {
 		this = n.getParameter(0, "fn").getParameter(_).asSource())
 	}
 	override string getSourceType() { result = "Gradio untrusted input" }
-
  }
 
 

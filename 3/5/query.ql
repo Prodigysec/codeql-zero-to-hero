@@ -6,6 +6,7 @@
 import python
 import semmle.python.ApiGraphs
 
+// ExecuteCall represents django.db’s execute method call
 class ExecuteCall extends DataFlow::CallCfgNode {
         ExecuteCall() {
         this = API::moduleImport("django").getMember("db").getMember("connection").getMember("cursor").getReturn().getMember("execute").getACall()

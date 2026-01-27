@@ -23,9 +23,9 @@ class GradioButton extends RemoteFlowSource::Range {
 
 	override string getSourceType() { result = "Gradio untrusted input" }
 
- }
+}
 
- class GradioInterface extends RemoteFlowSource::Range {
+class GradioInterface extends RemoteFlowSource::Range {
 	GradioInterface() {
 		exists(API::CallNode n |
 		n = API::moduleImport("gradio").getMember("Interface").getACall() |
@@ -33,7 +33,7 @@ class GradioButton extends RemoteFlowSource::Range {
 	}
 	override string getSourceType() { result = "Gradio untrusted input" }
 
- }
+}
 
 
 
@@ -43,7 +43,7 @@ class OsSystemSink extends API::CallNode {
 	}
 }
 
- private module MyConfig implements DataFlow::ConfigSig {
+private module MyConfig implements DataFlow::ConfigSig {
    predicate isSource(DataFlow::Node source) {
 	 source instanceof RemoteFlowSource
    }
@@ -53,10 +53,10 @@ class OsSystemSink extends API::CallNode {
 		sink = call.getArg(0)
 		)
    }
- }
+}
 
- module MyFlow = TaintTracking::Global<MyConfig>;
+module MyFlow = TaintTracking::Global<MyConfig>;
 
- from MyFlow::PathNode source, MyFlow::PathNode sink
- where MyFlow::flowPath(source, sink)
- select sink.getNode(), source, sink, "Data Flow from a Gradio source to `os.system`"
+from MyFlow::PathNode source, MyFlow::PathNode sink
+where MyFlow::flowPath(source, sink)
+select sink.getNode(), source, sink, "Data Flow from a Gradio source to `os.system`"
