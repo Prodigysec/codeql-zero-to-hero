@@ -1,0 +1,3 @@
+[submodule "codeql-workshop"]
+	path = codeql-workshop
+	url = https://github.com/sylwia-budzynska/codeql-workshop
